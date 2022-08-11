@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/css/navbar.css">
+<script src="/js/navbar.js" type="module"></script>
 <nav>
     <div class="navbar">
         <div class="logo">
@@ -10,6 +11,29 @@
         <div class="item">
             <div>Orders</div>
             <div>Sign in</div>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="sign-in">
+            <div class="close-btn"></div>
+            <div class="title">Sign in</div>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button>Sign in</button>
+                <div>Don't have an account? Sign up</div>
+            </form>
+        </div>
+        <div class="sign-up">
+            <div class="close-btn"></div>
+            <div class="title">Sign up</div>
+            <form>
+                <input type="text" placeholder="User name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button>Sign up</button>
+                <div>Already have an account? Sign in</div>
+            </form>
         </div>
     </div>
 </nav>
