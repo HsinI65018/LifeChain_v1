@@ -11,15 +11,24 @@ main{
     align-items: center;
     justify-content: center;
 }
-
-/* info */
-main > .info{
+.bg{
+    position: absolute;
+    left: 0px;
     width: 650px;
     height: calc(100vh - 54px);
-    background: #A1C084;
+    background-color: #A1C084;
+    z-index: -1;
 }
-.info > .container{
-    width: 400px;
+.wrapper{
+    width: 1200px;
+    margin: auto;
+    height: calc(100vh - 54px);
+    display: flex;
+}
+
+/* info */
+.info-container{
+    width: 600px;
     height: calc(100vh - 54px - 200px);
     margin: auto;
     display: flex;
@@ -27,13 +36,17 @@ main > .info{
     align-items: flex-start;
     justify-content: space-around;
 }    
-.info > .container > .title{
+.info-container > .title{
+    width: 400px;
     font-weight: 700;
     color: #000000;
     font-size: 40px;
     margin-top: 50px;
 }
-.info > .container > button{
+.info-container > .subtitle{
+    width: 400px;
+}
+.info-container > button{
     width: 200px;
     height: 40px;
     font-weight: 700;
@@ -42,19 +55,19 @@ main > .info{
     border: none;
     cursor: pointer;
 }
-.info > .container > button:hover{
+.info-container > button:hover{
     transform: scale(1.1);
 }
 
 /* insurance */
 .insurance{
-    width: calc(100vw - 650px);
+    width: calc(100vw - 600px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.insurance > .container{
+.insu-container{
     width: 400px;
     height: calc(100vh - 54px - 200px);
     margin: auto;
@@ -64,11 +77,11 @@ main > .info{
     align-items: center;
     justify-content: center;
 }    
-.insurance > .container > div{
+.insu-container > div{
     width: 500px;
 }
-.insurance > .container > img{
-    width: calc(100vw - 650px);
+.insu-container > img{
+    width: calc(100vw - 700px);
 }
 
 /* insurance item */
