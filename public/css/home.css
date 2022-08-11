@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Noto Sans Telugu UI';
+    font-size: 18px;
+}
+main{
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* info */
+main > .info{
+    width: 650px;
+    height: calc(100vh - 54px);
+    background: #A1C084;
+}
+.info > .container{
+    width: 400px;
+    height: calc(100vh - 54px - 200px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}    
+.info > .container > .title{
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.info > .container > button{
+    width: 200px;
+    height: 40px;
+    font-weight: 700;
+    background: #E5E5E5;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.info > .container > button:hover{
+    transform: scale(1.1);
+}
+
+/* insurance */
+.insurance{
+    width: calc(100vw - 650px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.insurance > .container{
+    width: 400px;
+    height: calc(100vh - 54px - 200px);
+    margin: auto;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}    
+.insurance > .container > div{
+    width: 500px;
+}
+.insurance > .container > img{
+    width: calc(100vw - 650px);
+}
+
+/* insurance item */
+article{
+    margin-top: 50px;
+    height: calc(100vh - 54px);
+    display: flex;
+    justify-content: center;
+}
+.insurance-item{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.insurance-item > .img-container{
+    width: 500px;
+    height: 300px;
+}
+.img-container > img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.insurance-item > .img-container-2{
+    width: 480px;
+    height: 300px;
+}
+.img-container-2 > img{
+    width: 480px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.insurance-item > div{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+ul > li{
+    margin-bottom: 20px;
+}
+.insurance-item > button{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: 700;
+    background: #A1C084;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.insurance-item > button:hover{
+    transform: scale(1.1);
+}
+
+/* footer */
+footer{
+    height: 100px;
+    align-items: center;
+    background-color: #A1C084;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > div{
+    color: #FFFFFF;
+}
+footer > .github{
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+}
+.github > img{
+    width: 35px;
+    height: 35px;
+}
