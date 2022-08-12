@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Noto Sans Telugu UI';
+    font-size: 18px;
+}
+header{
+    max-width: 980px;
+    margin: 54px auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > .img-container{
+    width: 450px;
+    height: 300px;
+}
+.img-container > img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.calculate{
+    width: 450px;
+    display: flex;
+    align-items: flex-start;
+}
+.calculate > form{
+    width: 600px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.field > label{
+    display: inline-block;
+    width: 115px;
+}
+.field > input, .field > div > select{
+    box-sizing: border-box;
+    width: 150px;
+    height: 35px;
+    padding: 0px 15px 0px 15px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.field:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+.field:last-child > button{
+    width: 100px;
+    height: 35px;
+    background: #A1C084;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* desc */
+section{
+    max-width: 980px;
+    margin: 20px auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* insurande details */
+main{
+    max-width: 1200px;
+    margin: 40px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main > h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+main > ul{
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+main > ul > li{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+.payment{
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.payment > div{
+    width: 200px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.payment > a{
+    margin-bottom: 70px;
+    width: 150px;
+    height: 35px;
+    background: #A1C084;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 35px;
+    text-align: center;
+}
+.hr{
+    max-width: 1200px;
+    border-bottom: 1px solid #E8E8E8;
+    margin: auto;
+    margin-bottom: 40px;
+}
+main > .hr{
+    width: 100%;
+    border-bottom: 1px solid #E8E8E8;
+}

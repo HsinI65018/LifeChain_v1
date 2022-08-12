@@ -3,7 +3,9 @@ const render = require('./router/render');
 
 const app = express();
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
+app.use(express.static('./public'));
+
 app.use('/', render);
 
 const PORT = '3000';

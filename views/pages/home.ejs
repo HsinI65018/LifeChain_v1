@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
+    <%- include('../partials/head.ejs'); %>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/home.js" type="module"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <%- include('../partials/navbar.ejs'); %>
+    <main>
+        <div class="bg"></div>
+        <div class="wrapper">
+            <section class="info">
+                <div class="info-container">
+                    <div class="title">Use Blockchain with Insurance</div>
+                    <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta neque eget at et, elementum. Egestas egesollicitudin amet malesuada nec tempor quis. Et mattis </div>
+                    <button class="insure-now">Insure Now</button>
+                </div>
+            </section>
+            <section class="insurance">
+                <div class="insu-container">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta neque eget at et, elementum. Egestas eget arcu, volutpat quisque adipiscing. </div>
+                    <img src="https://d1dd0qmbf0xvcr.cloudfront.net/LifeChain/insurance.jpg">
+                </div>
+            </section>
+        </div>
+    </main>
+    <article>
+        <section class="insurance-item">
+            <div class="img-container">
+                <img src="https://d1dd0qmbf0xvcr.cloudfront.net/LifeChain/travel-1.jpg">
+            </div>
+            <div>Insurance Name</div>
+            <ul>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+            </ul>
+            <a href="/calculate" class="item-1">Learn more</a>
+        </section>
+        <section class="insurance-item">
+            <div class="img-container-2">
+                <img src="https://d1dd0qmbf0xvcr.cloudfront.net/LifeChain/travel-2.jpg" class="test">
+            </div>
+            <div>Insurance Name</div>
+            <ul>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+                <li>cLorem ipsum dolor sit amet, consectetur </li>
+            </ul>
+            <a href="/calculate" class="item-2">Learn more</a>
+        </section>
+    </article>
+    <footer>
+        <div>© 2022 Hsin-I Chang</div>
+        <a href="https://github.com/HsinI65018/LifeChain" class="github">
+            <img src="https://d1dd0qmbf0xvcr.cloudfront.net/LifeChain/github.png">
+        </a>
+    </footer>
 </body>
 </html>

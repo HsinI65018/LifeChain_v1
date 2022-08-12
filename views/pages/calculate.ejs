@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs'); %>
+    <link rel="stylesheet" href="/css/calculate.css">
+    <script src="/js/calculate.js" type="module"></script>
+</head>
+<body>
+    <%- include('../partials/navbar.ejs'); %>
+    <header>
+        <div class="img-container"></div>
+        <div class="calculate">
+            <form>
+                <div class="field">
+                    <label for="age">Your age:</label>
+                    <input type="number" id="age" placeholder="30">
+                </div>
+                <div class="field">
+                    <label for="days">Travel days:</label>
+                    <input type="text" id="days" placeholder="10">
+                </div>
+                <div class="field">
+                    <div>
+                        <label for="assured">Sum assured:</label>
+                        <select id="assured">
+                            <option>100</option>
+                            <option>200</option>
+                            <option>500</option>
+                            <option>800</option>
+                            <option>1000</option>
+                        </select>
+                    </div>
+                    <button>Calculate</button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div class="hr"></div>
+    <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta neque eget at et, elementum. Egestas egesollicitudin amet malesuada nec tempor quis. Et mattis </section>
+    <main>
+        <h2>Insurance Details</h2>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
+        </ul>
+        <div class="hr"></div>
+        <div class="payment">
+            <div>Total: 2000</div>
+            <a href="/payment">Order</a>
+        </div>
+    </main>
+</body>
+</html>

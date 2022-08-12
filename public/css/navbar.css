@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Noto Sans Telugu UI';
+    font-size: 18px;
+}
+nav{
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 54px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: center; */
+    border-bottom: 1px solid #E5E5E5;
+    background-color: #FFFFFF;
+}
+.navbar{
+    width: 1200px;
+    height: 54px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo > a, .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.logo > a > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.logo > a > div{
+    color: #659157;
+}
+.item > div{
+    width: 100px;
+    color: #757575;
+    text-align: right;
+}
+
+/* sign-in */
+.form-container{
+    width: 340px;
+    margin: auto;
+    transform: translateY(50px);
+}
+.form-container > .sign-in, .form-container > .sign-up{
+    width: 340px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 60px #AAAAAA;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 15px solid #659157;
+}
+.close-btn{
+    width: 15px;
+    height: 25px;
+    margin-left: 300px;
+    background-image: url("https://d1dd0qmbf0xvcr.cloudfront.net/LifeChain/icon_close.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    cursor: pointer;
+}
+.sign-in > .title, .sign-up > .title{
+    font-size: 25px;
+    font-weight: 700;
+}
+.sign-in > form, .sign-up > form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form > input{
+    box-sizing: border-box;
+    width: 310px;
+    height: 40px;
+    padding: 0px 15px 0px 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+form > button{
+    width: 310px;
+    height: 40px;
+    background: #A1C084;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+form > div{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* form animation */
+.show-animation{
+    animation: 0.7s identifier;
+}
+@keyframes identifier {
+    0% {transform: translateY(-100%)}
+    100% {transform: translateY(0);}
+}
