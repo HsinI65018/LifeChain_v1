@@ -125,7 +125,7 @@ article{
 ul > li{
     margin-bottom: 20px;
 }
-.insurance-item > button{
+.insurance-item > a{
     width: 200px;
     height: 40px;
     margin-top: 20px;
@@ -135,8 +135,11 @@ ul > li{
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
 }
-.insurance-item > button:hover{
+.insurance-item > a:hover{
     transform: scale(1.1);
 }
 

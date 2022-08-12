@@ -6,7 +6,7 @@ const scrollController = () => {
 insureNowBtn.addEventListener('click', scrollController);
 
 
-//
+// set cookie
 const firstItem = document.querySelector('.item-1');
 const secondItem = document.querySelector('.item-2');
 const itemDetailController = (e) => {
@@ -16,7 +16,6 @@ const itemDetailController = (e) => {
     }else{
         document.cookie = "item=travel-2";
     }
-    window.location = '/calculate';
 }
 firstItem.addEventListener('click', itemDetailController);
 secondItem.addEventListener('click', itemDetailController);
