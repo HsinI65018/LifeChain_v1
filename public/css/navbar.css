@@ -104,7 +104,7 @@ form > button{
     color: #FFFFFF;
     cursor: pointer;
 }
-form > div{
+form > .switch-up, form > .switch-in{
     margin-top: 10px;
     margin-bottom: 20px;
     cursor: pointer;
