@@ -69,10 +69,12 @@ ageField.addEventListener('blur', optionConteoller);
 const calForm = document.querySelector('.cal-form');
 const main = document.querySelector('main');
 const itemContainer = document.querySelector('.item-container');
+const totalPrice = document.querySelector('.total-price');
 const calculateController = async (e) => {
     e.preventDefault();
     const [name, productNum] = document.cookie.split('item=travel-');
     const age = document.querySelector('.age').value;
+    const days = document.querySelector('.days').value;
     let plan = document.querySelector('.assured').value;
 
     itemContainer.innerHTML = '';
@@ -82,7 +84,8 @@ const calculateController = async (e) => {
         method: "POST",
         body: JSON.stringify({
             "product": productNum,
-            "plan": plan
+            "plan": plan,
+            "days": days
         }),
         headers: {
             "Content-type": "application/json"
@@ -95,13 +98,16 @@ const calculateController = async (e) => {
         const title = document.createElement('div');
         const value = document.createElement('div');
 
-        title.textContent = data.title[key];
-        value.textContent = data.data[key];
+        if(data.title[key] !== null){
+            title.textContent = data.title[key];
+            value.textContent = data.data[key];
 
-        item.appendChild(title);
-        item.appendChild(value);
-        itemContainer.appendChild(item);
+            item.appendChild(title);
+            item.appendChild(value);
+            itemContainer.appendChild(item);
+        }
     });
+    totalPrice.textContent = `Total:${data.price.price}`;
     main.classList.remove('hide')
 }
 calForm.addEventListener('submit', calculateController);
