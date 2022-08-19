@@ -10,24 +10,26 @@
     <header>
         <div class="img-container"></div>
         <div class="calculate">
-            <form>
+            <form class="cal-form">
                 <div class="field">
                     <label for="age">Your age:</label>
-                    <input type="number" id="age" placeholder="30">
+                    <input type="number" id="age" class="age" placeholder="25" required>
                 </div>
                 <div class="field">
                     <label for="days">Travel days:</label>
-                    <input type="text" id="days" placeholder="10">
+                    <input type="number" id="days" class="days" placeholder="-" min="2" max="6" required>
                 </div>
                 <div class="field">
                     <div>
                         <label for="assured">Sum assured:</label>
-                        <select id="assured">
-                            <option>100</option>
-                            <option>200</option>
-                            <option>500</option>
-                            <option>800</option>
-                            <option>1000</option>
+                        <select id="assured" class="assured" required>
+                            <option value="" selected disabled hidden>-</option>
+                            <option class="f1-opt hide" id="5" value="5">2,000,000</option>
+                            <option class="f2-opt hide" id="4" value="4">3,000,000</option>
+                            <option class="f3-opt hide" id="3" value="3">5,000,000</option>
+                            <option class="f4-opt hide" id="2" value="2">8,000,000</option>
+                            <option class="f5-opt hide" id="1" value="1">10,000,000</option>
+                            <option class="f6-opt hide" id="0" value="0">15,000,000</option>
                         </select>
                     </div>
                     <button>Calculate</button>
@@ -37,18 +39,12 @@
     </header>
     <div class="hr"></div>
     <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta neque eget at et, elementum. Egestas egesollicitudin amet malesuada nec tempor quis. Et mattis </section>
-    <main>
+    <main class="hide">
         <h2>Insurance Details</h2>
-        <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ------------------------------------------200</li>
-        </ul>
+        <ul class="item-container"></ul>
         <div class="hr"></div>
         <div class="payment">
-            <div>Total: 2000</div>
+            <div class="total-price"></div>
             <a href="/payment">Order</a>
         </div>
     </main>

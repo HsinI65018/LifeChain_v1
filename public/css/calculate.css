@@ -83,7 +83,7 @@ main{
 }
 main > h2{
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 main > ul{
     max-width: 980px;
@@ -91,9 +91,11 @@ main > ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
 }
 main > ul > li{
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
     margin-bottom: 30px;
 }
@@ -130,4 +132,8 @@ main > ul > li{
 main > .hr{
     width: 100%;
     border-bottom: 1px solid #E8E8E8;
+}
+
+.hide{
+    display: none;
 }
