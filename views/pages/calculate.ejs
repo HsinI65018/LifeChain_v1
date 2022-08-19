@@ -24,11 +24,12 @@
                         <label for="assured">Sum assured:</label>
                         <select id="assured" class="assured" required>
                             <option value="" selected disabled hidden>-</option>
-                            <option class="f1-opt hide">2,000,000</option>
-                            <option class="f2-opt hide">3,000,000</option>
-                            <option class="f3-opt hide">5,000,000</option>
-                            <option class="f4-opt hide">8,000,000</option>
-                            <option class="f5-opt hide">10,000,000</option>
+                            <option class="f1-opt hide" id="5" value="5">2,000,000</option>
+                            <option class="f2-opt hide" id="4" value="4">3,000,000</option>
+                            <option class="f3-opt hide" id="3" value="3">5,000,000</option>
+                            <option class="f4-opt hide" id="2" value="2">8,000,000</option>
+                            <option class="f5-opt hide" id="1" value="1">10,000,000</option>
+                            <option class="f6-opt hide" id="0" value="0">15,000,000</option>
                         </select>
                     </div>
                     <button>Calculate</button>
@@ -40,92 +41,7 @@
     <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta neque eget at et, elementum. Egestas egesollicitudin amet malesuada nec tempor quis. Et mattis </section>
     <main class="hide">
         <h2>Insurance Details</h2>
-        <ul>
-            <li>
-                <div>Death, Disability Benefit or Funeral Expenses Benefit</div>
-                <div class="col-1">10,000,000</div>
-            </li>
-            <li>
-                <div>Disability Insurance</div>
-                <div  class="col-2">0</div>
-            </li>
-            <li>
-                <div>Death Care Benefit or Funeral Expense Benefit</div>
-                <div  class="col-3">500,000</div>
-            </li>
-            <li>
-                <div>Major Burns and Scald Insurance</div>
-                <div  class="col-4">2,500,000</div>
-            </li>
-            <li>
-                <div>Injury Medical Expenses Rider</div>
-                <div  class="col-5">1,000,000</div>
-            </li>
-            <li>
-                <div>Hospital Medical Insurance</div>
-                <div  class="col-6">1,000,000</div>
-            </li>
-            <li>
-                <div>Returning Hospital Medical Insurance</div>
-                <div  class="col-7">100,000</div>
-            </li>
-            <li>
-                <div>Outpatient Medical Insurance</div>
-                <div  class="col-8">10,000</div>
-            </li>
-            <li>
-                <div>Emergency Medical Insurance</div>
-                <div  class="col-9">10,000</div>
-            </li>
-            <li>
-                <div>Travel Liability Insurance</div>
-                <div>5,000,000</div>
-            </li>
-            <li>
-                <div>Trip Cancellation Insurance</div>
-                <div>120,000</div>
-            </li>
-            <li>
-                <div>Trip Shortening Insurance</div>
-                <div>120,000</div>
-            </li>
-            <li>
-                <div>Trip Change Insurance</div>
-                <div>120,000</div>
-            </li>
-            <li>
-                <div>Visiting Expenses Insurance</div>
-                <div>200,000</div>
-            </li>
-            <li>
-                <div>Travel Document Loss Insurance (Fixed Benefit/One Time Limit)</div>
-                <div>5,000</div>
-            </li>
-            <li>
-                <div>Flight Delay Insurance (up to four hours or more / two times)</div>
-                <div>5,000</div>
-            </li>
-            <li>
-                <div>Luggage Loss Insurance (small computer: 10,000 fixed, luggage: 2,000 fixed)</div>
-                <div>80,000</div>
-            </li>
-            <li>
-                <div>Baggage Delay Insurance (up to four hours/one time limit)</div>
-                <div>5,000</div>
-            </li>
-            <li>
-                <div>Emergency Medical Evacuation Expenses Insurance</div>
-                <div>Actual Cost</div>
-            </li>
-            <li>
-                <div>Repatriation Expenses Insurance</div>
-                <div>Actual Cost</div>
-            </li>
-            <li>
-                <div>Child Care Expenses Insurance</div>
-                <div>120,000</div>
-            </li>
-        </ul>
+        <ul class="item-container"></ul>
         <div class="hr"></div>
         <div class="payment">
             <div>Total: 2000</div>
