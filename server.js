@@ -1,6 +1,6 @@
 const express = require('express');
 const render = require('./router/render');
-const data = require('./controller/calculate');
+const data = require('./router/data');
 
 const app = express();
 

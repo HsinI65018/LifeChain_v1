@@ -1,3 +1,4 @@
+// show difference pic of insurance product
 const imgContainer = document.querySelector('.img-container');
 const [name, imgName] = document.cookie.split('item=');
 const itemController = () => {
@@ -8,7 +9,7 @@ const itemController = () => {
 window.addEventListener('load', itemController);
 
 
-// sum assured options
+// show difference sum assured options
 const ageField = document.querySelector('.age');
 const assured = document.querySelector('.assured');
 const options = document.querySelectorAll('option');
@@ -20,9 +21,11 @@ const optionConteoller = (e) => {
     const f5Opt = document.querySelector('.f5-opt');
     const f6Opt = document.querySelector('.f6-opt');
     const age = e.target.value;
+
     for(let i = 0; i < options.length; i++){
         options[i].classList.remove('hide');
     }
+
     if(imgName.includes('1')){
         f6Opt.classList.add('hide');
         if(age >=15 && age <20 || age >65 && age < 85){
@@ -66,6 +69,7 @@ const optionConteoller = (e) => {
 ageField.addEventListener('blur', optionConteoller);
 
 
+// calculate insurance value
 const calForm = document.querySelector('.cal-form');
 const main = document.querySelector('main');
 const itemContainer = document.querySelector('.item-container');
@@ -83,7 +87,7 @@ const calculateController = async (e) => {
     const response = await fetch('/api/data', {
         method: "POST",
         body: JSON.stringify({
-            "product": productNum,
+            "productId": productNum,
             "plan": plan,
             "days": days
         }),
@@ -93,21 +97,21 @@ const calculateController = async (e) => {
     });
     const data = await response.json();
 
-    Object.keys(data.title).forEach(key => {
+    Object.keys(data.termsName).forEach(key => {
         const item = document.createElement('li');
         const title = document.createElement('div');
         const value = document.createElement('div');
 
-        if(data.title[key] !== null){
-            title.textContent = data.title[key];
-            value.textContent = data.data[key];
+        if(data.termsName[key] !== null){
+            title.textContent = data.termsName[key];
+            value.textContent = data.termsValue[key];
 
             item.appendChild(title);
             item.appendChild(value);
             itemContainer.appendChild(item);
         }
     });
-    totalPrice.textContent = `Total:${data.price.price}`;
+    totalPrice.textContent = `Total:${data.planPrice.price}`;
     main.classList.remove('hide')
 }
 calForm.addEventListener('submit', calculateController);
