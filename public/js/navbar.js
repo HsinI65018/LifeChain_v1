@@ -49,6 +49,7 @@ switchUp.addEventListener('click', switchConteoller);
 
 // sign up
 const signUpForm = document.querySelector('.sign-up-form');
+const signUpError = document.querySelector('.sign-up-error');
 const signUpController = async (e) => {
     e.preventDefault();
     const userName = document.querySelector('.sign-up-name');
@@ -65,18 +66,22 @@ const signUpController = async (e) => {
             "Content-type": "application/json"
         }
     });
-    // const data = await response.json();
-
-    displayController(signUpcontainer, signInContainer);
-    userName.value = '';
-    email.value = '';
-    password.value = '';
+    const data = await response.json();
+    if(data.success === true){
+        displayController(signUpcontainer, signInContainer);
+        userName.value = '';
+        email.value = '';
+        password.value = '';
+    }else{
+        signUpError.textContent = data.message;
+    }
 };
 signUpForm.addEventListener('submit', signUpController);
 
 
 // Sign in
 const signInForm = document.querySelector('.sign-in-form');
+const signInError = document.querySelector('.sign-in-error');
 const signInController = async (e) => {
     e.preventDefault();
     const email = document.querySelector('.sign-in-email');
@@ -94,6 +99,8 @@ const signInController = async (e) => {
     const data = await response.json()
     if(data.success === true){
         location.reload();
+    }else{
+        signInError.textContent = data.message;
     }
 }
 signInForm.addEventListener('submit', signInController);

@@ -122,3 +122,8 @@ form > .switch-up, form > .switch-in{
 .hide{
     display: none;
 }
+
+.error{
+    margin-top: 10px;
+    color: red;
+}
