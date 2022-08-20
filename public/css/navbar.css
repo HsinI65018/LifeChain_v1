@@ -43,7 +43,7 @@ nav{
     color: #659157;
 }
 .item > div{
-    width: 100px;
+    margin-left: 30px;
     color: #757575;
     text-align: right;
 }
@@ -117,4 +117,8 @@ form > .switch-up, form > .switch-in{
 @keyframes identifier {
     0% {transform: translateY(-100%)}
     100% {transform: translateY(0);}
+}
+
+.hide{
+    display: none;
 }
